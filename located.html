@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <title>Airbnb</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./asstets/css/grid.css">
+    <link rel="stylesheet" href="./asstets/css/main.css">
+    <link rel="stylesheet" href="./asstets/css/base.css">
+    <link rel="stylesheet" href="./asstets/css/responsive.css">
+    <link rel="stylesheet" href="./asstets/css/located.css">
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="main">
+        <div class="grid wide">
+            <div class="located__header">
+                <div class="header__navbar">
+                    <span class="navbar__img mobilenone">
+                        <a href="" class="navbar__img-link">
+                            <i class='bx bxl-airbnb'></i>
+                        </a>
+                    </span>
+                    <div class="navbar__vicinity-container">
+                        <ul class="vicinity-list">
+                            <li class="vicinity-item line--separate">
+                                <h3 class="vicinity">Lân cận</h3>
+                            </li>
+                            <li class="vicinity-item add-days">
+                                <h3 class="add-day">Thêm ngày</h3>
+                                <div class="vicinity-item-search">
+                                    <i class='vicinity-item-search-icon bx bx-search'></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="navbar__list navbar__list-user mobilenone">
+                        <li class="navbar__item">
+                            <a href="" class="navbar__item-link">Trở thành chủ nhà</a>
+                        </li>
+
+                        <li class="navbar__item navbar__item-user">
+                            <a href="" class="navbar__item-link navbar__link-user">
+                                <i class='navbar__item-link-icon bx bx-globe'></i>
+                            </a>
+                        </li>
+
+                        <li class="navbar__item navbar__item-user">
+                            <div class="navbar__item-user-infor">
+                                <i class='navbar__item-user-icon bx bx-menu-alt-left'></i>
+                                <i class='navbar__item-user-icon bx bxs-user-circle'></i>
+                                <div class="navbar__item-user-container">
+                                    <ul class="user-container__list">
+                                        <li class="user-container__item">
+                                            <a href="" class="user-container__link">Đăng ký</a>
+                                        </li>
+                                        <li class="user-container__item">
+                                            <a href="" class="user-container__link">Đăng nhập</a>
+                                        </li>
+                                        <li class="user-separate">
+                                            <span></span>
+                                        </li>
+                                        <li class="user-container__item">
+                                            <a href="" class="user-container__link">Cho thuê nhà</a>
+                                        </li>
+                                        <li class="user-container__item">
+                                            <a href="" class="user-container__link">Tổ chức trãi nghiệm</a>
+                                        </li>
+                                        <li class="user-container__item">
+                                            <a href="" class="user-container__link">Trợ giúp</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="located__contaier-content">
+                <div class="located__introduce">
+                    <span>56 trải nghiêm</span>
+                    <h2>Trải nghiệm gần bạn</h2>
+                </div>
+
+                <div class="located__purpose">
+                    <ul class="located__purpose-list">
+                        <li class="located__purpose-item">
+                            <button class="located__propose-btn">
+                                <i class='bx bx-slider-alt'></i>
+                                <span>Bộ lọc</span>
+                            </button>
+                        </li>
+                        <li class="located__purpose-item">
+                            <button class="located__propose-btn">
+                                <span>Khách</span>
+                            </button>
+                        </li>
+                        <li class="located__purpose-item">
+                            <button class="located__propose-btn">
+                                <span>Giá</span>
+                            </button>
+                        </li>
+                        <li class="located__purpose-item">
+                            <button class="located__propose-btn">
+                                <span>Thời gian trong ngày</span>
+                            </button>
+                        </li>
+                        <li class="located__purpose-item">
+                            <button class="located__propose-btn">
+                                <span>Ngôn ngữ có thể sử dụng</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="located__purpose-list purpose-list-overflow">
+                        <li class="located__purpose-item">
+                            <button class="located__propose-btn located__propose-btn--border-none">
+                                <span>Thức ăn và đồ uống</span>
+                            </button>
+                        </li>
+                        <li class="located__purpose-item">
+                            <button class="located__propose-btn located__propose-btn--border-none">
+                                <span>Nghệ thuật và văn hóa</span>
+                            </button>
+                        </li>
+                        <li class="located__purpose-item">
+                            <button class="located__propose-btn located__propose-btn--border-none">
+                                <span>Hoạt động sử dụng phương tiện giao thông</span>
+                            </button>
+                        </li>
+                        <li class="located__purpose-item">
+                            <button class="located__propose-btn located__propose-btn--border-none">
+                                <span>Thiên nhiên và hoạt động ngoài trời</span>
+                            </button>
+                        </li>
+                        <li class="located__purpose-item">
+                            <button class="located__propose-btn located__propose-btn--border-none">
+                                <span>Thể thao</span>
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="purpose__show-map">
+                        <i class='bx bx-map-alt'></i>
+                        <span>Hiện bản đồ</span>
+                    </div>
+                </div>
+                <h6 class="purpose__prompt">Kiểm tra quy định hạn chế trong đại dịch COVID-19 trước khi đặt.
+                    <a>Tìm hiểu thêm</a>
+                </h6>
+                <div class="row">
+                    <div class="col l-2-4">
+                        <a href="#" class="purpose__exp-container">
+                            <div class="exp-container-img"
+                                style="background-image: url(https://a0.muscache.com/im/pictures/lombard/MtTemplate-1584248-media_library/original/79cd37e6-417f-4fa5-83bd-25919402e988.jpeg?im_w=320);">                                
+                            </div>
+                            <div class="exp-container-favorite">
+                                <i class='bx bx-star exp-container-favorite--non-active'></i>
+                                <i class='bx bxs-star exp-container-favorite--active'></i>
+                                <span>4.82</span>
+                            </div>
+                            <div class="exp-container-favorite-type">
+                                <span>Du thuyền qua đêm Vịnh Hạ Long từ Hà Nội</span>
+                            </div>
+                            <div class="exp-container-favorite-price">
+                                <span>Từ 1.106 kr NOK
+                                    <span class="exp-container-favorite-price-per-one">/người</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2-4">
+                        <a href="#" class="purpose__exp-container">
+                            <div class="exp-container-img"
+                                style="background-image: url(https://a0.muscache.com/im/pictures/lombard/MtTemplate-1584248-media_library/original/79cd37e6-417f-4fa5-83bd-25919402e988.jpeg?im_w=320);">                                
+                            </div>
+                            <div class="exp-container-favorite">
+                                <i class='bx bx-star exp-container-favorite--non-active'></i>
+                                <i class='bx bxs-star exp-container-favorite--active'></i>
+                                <span>4.82</span>
+                            </div>
+                            <div class="exp-container-favorite-type">
+                                <span>Du thuyền qua đêm Vịnh Hạ Long từ Hà Nội</span>
+                            </div>
+                            <div class="exp-container-favorite-price">
+                                <span>Từ 1.106 kr NOK
+                                    <span class="exp-container-favorite-price-per-one">/người</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2-4">
+                        <a href="#" class="purpose__exp-container">
+                            <div class="exp-container-img"
+                                style="background-image: url(https://a0.muscache.com/im/pictures/lombard/MtTemplate-1584248-media_library/original/79cd37e6-417f-4fa5-83bd-25919402e988.jpeg?im_w=320);">                                
+                            </div>
+                            <div class="exp-container-favorite">
+                                <i class='bx bx-star exp-container-favorite--non-active'></i>
+                                <i class='bx bxs-star exp-container-favorite--active'></i>
+                                <span>4.82</span>
+                            </div>
+                            <div class="exp-container-favorite-type">
+                                <span>Du thuyền qua đêm Vịnh Hạ Long từ Hà Nội</span>
+                            </div>
+                            <div class="exp-container-favorite-price">
+                                <span>Từ 1.106 kr NOK
+                                    <span class="exp-container-favorite-price-per-one">/người</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2-4">
+                        <a href="#" class="purpose__exp-container">
+                            <div class="exp-container-img"
+                                style="background-image: url(https://a0.muscache.com/im/pictures/lombard/MtTemplate-1584248-media_library/original/79cd37e6-417f-4fa5-83bd-25919402e988.jpeg?im_w=320);">                                
+                            </div>
+                            <div class="exp-container-favorite">
+                                <i class='bx bx-star exp-container-favorite--non-active'></i>
+                                <i class='bx bxs-star exp-container-favorite--active'></i>
+                                <span>4.82</span>
+                            </div>
+                            <div class="exp-container-favorite-type">
+                                <span>Du thuyền qua đêm Vịnh Hạ Long từ Hà Nội</span>
+                            </div>
+                            <div class="exp-container-favorite-price">
+                                <span>Từ 1.106 kr NOK
+                                    <span class="exp-container-favorite-price-per-one">/người</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2-4">
+                        <a href="#" class="purpose__exp-container">
+                            <div class="exp-container-img"
+                                style="background-image: url(https://a0.muscache.com/im/pictures/lombard/MtTemplate-1584248-media_library/original/79cd37e6-417f-4fa5-83bd-25919402e988.jpeg?im_w=320);">                                
+                            </div>
+                            <div class="exp-container-favorite">
+                                <i class='bx bx-star exp-container-favorite--non-active'></i>
+                                <i class='bx bxs-star exp-container-favorite--active'></i>
+                                <span>4.82</span>
+                            </div>
+                            <div class="exp-container-favorite-type">
+                                <span>Du thuyền qua đêm Vịnh Hạ Long từ Hà Nội</span>
+                            </div>
+                            <div class="exp-container-favorite-price">
+                                <span>Từ 1.106 kr NOK
+                                    <span class="exp-container-favorite-price-per-one">/người</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2-4">
+                        <a href="#" class="purpose__exp-container">
+                            <div class="exp-container-img"
+                                style="background-image: url(https://a0.muscache.com/im/pictures/lombard/MtTemplate-1584248-media_library/original/79cd37e6-417f-4fa5-83bd-25919402e988.jpeg?im_w=320);">                                
+                            </div>
+                            <div class="exp-container-favorite">
+                                <i class='bx bx-star exp-container-favorite--non-active'></i>
+                                <i class='bx bxs-star exp-container-favorite--active'></i>
+                                <span>4.82</span>
+                            </div>
+                            <div class="exp-container-favorite-type">
+                                <span>Du thuyền qua đêm Vịnh Hạ Long từ Hà Nội</span>
+                            </div>
+                            <div class="exp-container-favorite-price">
+                                <span>Từ 1.106 kr NOK
+                                    <span class="exp-container-favorite-price-per-one">/người</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2-4">
+                        <a href="#" class="purpose__exp-container">
+                            <div class="exp-container-img"
+                                style="background-image: url(https://a0.muscache.com/im/pictures/lombard/MtTemplate-1584248-media_library/original/79cd37e6-417f-4fa5-83bd-25919402e988.jpeg?im_w=320);">                                
+                            </div>
+                            <div class="exp-container-favorite">
+                                <i class='bx bx-star exp-container-favorite--non-active'></i>
+                                <i class='bx bxs-star exp-container-favorite--active'></i>
+                                <span>4.82</span>
+                            </div>
+                            <div class="exp-container-favorite-type">
+                                <span>Du thuyền qua đêm Vịnh Hạ Long từ Hà Nội</span>
+                            </div>
+                            <div class="exp-container-favorite-price">
+                                <span>Từ 1.106 kr NOK
+                                    <span class="exp-container-favorite-price-per-one">/người</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2-4">
+                        <a href="#" class="purpose__exp-container">
+                            <div class="exp-container-img"
+                                style="background-image: url(https://a0.muscache.com/im/pictures/lombard/MtTemplate-1584248-media_library/original/79cd37e6-417f-4fa5-83bd-25919402e988.jpeg?im_w=320);">                                
+                            </div>
+                            <div class="exp-container-favorite">
+                                <i class='bx bx-star exp-container-favorite--non-active'></i>
+                                <i class='bx bxs-star exp-container-favorite--active'></i>
+                                <span>4.82</span>
+                            </div>
+                            <div class="exp-container-favorite-type">
+                                <span>Du thuyền qua đêm Vịnh Hạ Long từ Hà Nội</span>
+                            </div>
+                            <div class="exp-container-favorite-price">
+                                <span>Từ 1.106 kr NOK
+                                    <span class="exp-container-favorite-price-per-one">/người</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2-4">
+                        <a href="#" class="purpose__exp-container">
+                            <div class="exp-container-img"
+                                style="background-image: url(https://a0.muscache.com/im/pictures/lombard/MtTemplate-1584248-media_library/original/79cd37e6-417f-4fa5-83bd-25919402e988.jpeg?im_w=320);">                                
+                            </div>
+                            <div class="exp-container-favorite">
+                                <i class='bx bx-star exp-container-favorite--non-active'></i>
+                                <i class='bx bxs-star exp-container-favorite--active'></i>
+                                <span>4.82</span>
+                            </div>
+                            <div class="exp-container-favorite-type">
+                                <span>Du thuyền qua đêm Vịnh Hạ Long từ Hà Nội</span>
+                            </div>
+                            <div class="exp-container-favorite-price">
+                                <span>Từ 
+                                    <span class="exp-container-favorite-old-price">954 kr NOK</span>
+                                    <span class="exp-container-favorite-current-price">600 kr NOK</span>
+                                    <span class="exp-container-favorite-price-per-one">/người</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2-4">
+                        <a href="#" class="purpose__exp-container">
+                            <div class="exp-container-img"
+                                style="background-image: url(https://a0.muscache.com/im/pictures/lombard/MtTemplate-1584248-media_library/original/79cd37e6-417f-4fa5-83bd-25919402e988.jpeg?im_w=320);">                                
+                            </div>
+                            <div class="exp-container-favorite">
+                                <i class='bx bx-star exp-container-favorite--non-active'></i>
+                                <i class='bx bxs-star exp-container-favorite--active'></i>
+                                <span>4.82</span>
+                            </div>
+                            <div class="exp-container-favorite-type">
+                                <span>Du thuyền qua đêm Vịnh Hạ Long từ Hà Nội</span>
+                            </div>
+                            <div class="exp-container-favorite-price">
+                                <span>Từ 1.106 kr NOK
+                                    <span class="exp-container-favorite-price-per-one">/người</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2-4">
+                        <a href="#" class="purpose__exp-container">
+                            <div class="exp-container-img"
+                                style="background-image: url(https://a0.muscache.com/im/pictures/lombard/MtTemplate-1584248-media_library/original/79cd37e6-417f-4fa5-83bd-25919402e988.jpeg?im_w=320);">                                
+                            </div>
+                            <div class="exp-container-favorite">
+                                <i class='bx bx-star exp-container-favorite--non-active'></i>
+                                <i class='bx bxs-star exp-container-favorite--active'></i>
+                                <span>4.82</span>
+                            </div>
+                            <div class="exp-container-favorite-type">
+                                <span>Du thuyền qua đêm Vịnh Hạ Long từ Hà Nội</span>
+                            </div>
+                            <div class="exp-container-favorite-price">
+                                <span>Từ 1.106 kr NOK
+                                    <span class="exp-container-favorite-price-per-one">/người</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l-12 m-12 m-4">
+                    <div class="footer__address">
+                        <ul class="footer__address-list">
+                            <li class="footer__address-item">
+                                <p>© 2021 Airbnb, Inc.</p>
+                            </li>
+                            <li class="footer__address-item footer__space-separate">
+                                <span>.</span>
+                            </li>
+                            <li class="footer__address-item">
+                                <a href="" class="footer__address-link">Quyền riêng tư</a>
+                            </li>
+                            <li class="footer__address-item footer__space-separate">
+                                <span>.</span>
+                            </li>
+                            <li class="footer__address-item">
+                                <a href="" class="footer__address-link">Điều khoản</a>
+                            </li>
+                            <li class="footer__address-item footer__space-separate">
+                                <span>.</span>
+                            </li>
+                            <li class="footer__address-item">
+                                <a href="" class="footer__address-link">Sơ đồ trang web</a>
+                            </li>
+                        </ul>
+
+                        <ul class="footer__address-list">
+                            <li class="footer__address-item footer__language-monery-item">
+                                <i class='language-monery__icon bx bx-globe'></i>
+                                <a href="" class="footer__address-link footer__address-language">Tiếng Việt(VN)</a>
+                            </li>
+                            <li class="footer__address-item footer__language-monery-item">
+                                <i class='language-moner__dollar-icon bx bx-dollar'></i>
+                                <a href="" class="footer__address-link footer__address-monery">USD</a>
+                            </li>
+                            <li
+                                class="footer__address-item footer__language-monery-item footer__language-monery-item-social">
+                                <i class='address-item__social-icon bx bxl-facebook'></i>
+                                <i class='address-item__social-icon bx bxl-twitter'></i>
+                                <i class='address-item__social-icon bx bxl-instagram'></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>

@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <title>Airbnb</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="./asstets/css/base.css">
+    <link rel="stylesheet" href="./asstets/css/main.css">
+    <link rel="stylesheet" href="./asstets/css/grid.css">
+    <link rel="stylesheet" href="./asstets/css/responsive.css">
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="main js-main">
+        <div class="grid wide header__navber-item">
+            <div id="header" class="header js-header">
+                <div class="navbar">
+                    <span class="navbar__img mobilenone">
+                        <a href="" class="navbar__img-link">
+                            <i class='bx bxl-airbnb'></i>
+                        </a>
+                    </span>
+                    <ul class="navbar__list scrolling-hidden mobilenone">
+                        <li class="navbar__item">
+                            <a href="" class="navbar__item-link">Nơi ở</a>
+                        </li>
+
+                        <li class="navbar__item scrolling-hidden">
+                            <a href="" class="navbar__item-link">Trãi nghiệm</a>
+                        </li>
+
+                        <li class="navbar__item scrolling-hidden">
+                            <a href="" class="navbar__item-link">Trãi nghiệm trực tuyến</a>
+                        </li>
+                    </ul>
+                    <div class="scrooling-search">
+                        <div class="scrooling__container">
+                            <input type="text" name="" id="" placeholder="Bạn đang tìm gì?">
+                            <div class="scrooling__container-search-icon">
+                                <i class='scrooling__container-icon bx bx-search'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="navbar__list navbar__list-user mobilenone">
+                        <li class="navbar__item">
+                            <a href="" class="navbar__item-link">Trở thành chủ nhà</a>
+                        </li>
+
+                        <li class="navbar__item navbar__item-user">
+                            <a href="" class="navbar__item-link navbar__link-user">
+                                <i class='navbar__item-link-icon bx bx-globe'></i>
+                            </a>
+                        </li>
+
+                        <li class="navbar__item navbar__item-user">
+                            <div class="navbar__item-user-infor">
+                                <i class='navbar__item-user-icon bx bx-menu-alt-left'></i>
+                                <i class='navbar__item-user-icon bx bxs-user-circle'></i>
+                                <div class="navbar__item-user-container">
+                                    <ul class="user-container__list">
+                                        <li class="user-container__item">
+                                            <a href="" class="user-container__link">Đăng ký</a>
+                                        </li>
+                                        <li class="user-container__item">
+                                            <a href="" class="user-container__link">Đăng nhập</a>
+                                        </li>
+                                        <li class="user-separate">
+                                            <span></span>
+                                        </li>
+                                        <li class="user-container__item">
+                                            <a href="" class="user-container__link">Cho thuê nhà</a>
+                                        </li>
+                                        <li class="user-container__item">
+                                            <a href="" class="user-container__link">Tổ chức trãi nghiệm</a>
+                                        </li>
+                                        <li class="user-container__item">
+                                            <a href="" class="user-container__link">Trợ giúp</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="search--active" class="header__with-search mobilenone">
+                    <div class="search__located header__with-search__item">
+                        <h5 class="search__located-heading">Địa điểm</h5>
+                        <input class="search__desc" placeholder="Bạn sắp đi đâu?">
+                        <div class="search__located-checked">
+                            <div class="search__located-checked-item">
+                                <h4 class="checked-item__heading">Mọi lúc, mọi nơi</h4>
+                                <a class="checked-item__link">
+                                    <p>Tìm kiếm linh hoạt</p>
+                                    <i class='bx bxs-right-arrow'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <label for="checked__room" class="search__room-receive header__with-search__item">
+                        <input hidden type="checkbox" id="checked__room" class="checked__room">
+                        <h5 class="search__located-heading">Nhận phòng</h5>
+                        <p class="search__desc">Thêm ngày</p>
+                        <div class="room__calendar">
+                            <div class="calendar__heading">
+                                <div class="calendar__heading-btn">
+                                    <button class="heading__calendar calendar__heading-btn--active ">Lịch</button>
+                                    <button class="heading__visit-day">Ngày sinh hoạt</button>
+                                </div>
+                            </div>
+                            <div class="calendar__body">
+                                <div class="row calendar__container">
+                                    <div class="col l-6 calendar__col">
+                                        <div class="calendar__font">
+                                            <div class="current-day">
+                                                <h1>tháng 8, năm 2021</h1>
+                                            </div>
+
+                                            <div class="current-month">
+                                                <ul class="week-days">
+                                                    <li>T2</li>
+                                                    <li>T3</li>
+                                                    <li>T4</li>
+                                                    <li>T5</li>
+                                                    <li>T6</li>
+                                                    <li>T7</li>
+                                                    <li>CN</li>
+                                                </ul>
+
+                                                <div class="weeks">
+                                                    <ul class="first__week">
+                                                        <span class="last-month">26</span>
+                                                        <span class="last-month">27</span>
+                                                        <span class="last-month">28</span>
+                                                        <span class="last-month">29</span>
+                                                        <span class="last-month">30</span>
+                                                        <span class="last-month">31</span>
+                                                        <span class="before-days">01</span>
+                                                    </ul>
+
+                                                    <ul class="second__week">
+                                                        <span class="before-days">02</span>
+                                                        <span class="before-days">03</span>
+                                                        <span class="before-days">04</span>
+                                                        <span class="before-days">05</span>
+                                                        <span class="before-days">06</span>
+                                                        <span class="before-days">07</span>
+                                                        <span class="before-days">08</span>
+                                                    </ul>
+
+                                                    <ul class="third__week">
+                                                        <span class="before-days">09</span>
+                                                        <span class="before-days">10</span>
+                                                        <span class="before-days">11</span>
+                                                        <span class="before-days">12</span>
+                                                        <span class="before-days">13</span>
+                                                        <span class="before-days">14</span>
+                                                        <span class="before-days">15</span>
+                                                    </ul>
+
+                                                    <ul class="four__week">
+                                                        <span class="before-days">16</span>
+                                                        <span class="before-days">17</span>
+                                                        <span class="before-days">18</span>
+                                                        <span class="before-days">19</span>
+                                                        <span class="before-days">20</span>
+                                                        <span class="before-days">21</span>
+                                                        <span class="before-days">22</span>
+                                                    </ul>
+
+                                                    <ul class="fif__week">
+                                                        <span>23 <div class="today"></div></span>
+                                                        <span>24</span>
+                                                        <span>25</span>
+                                                        <span>26</span>
+                                                        <span>27</span>
+                                                        <span>28</span>
+                                                        <span>29</span>
+                                                    </ul>
+
+                                                    <ul class="six__week">
+                                                        <span>30</span>
+                                                        <span>31</span>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col l-6 calendar__col">
+                                        <div class="calendar__font">
+                                            <div class="current-day">
+                                                <h1>tháng 9, năm 2021</h1>
+                                            </div>
+
+                                            <div class="current-month">
+                                                <ul class="week-days">
+                                                    <li>T2</li>
+                                                    <li>T3</li>
+                                                    <li>T4</li>
+                                                    <li>T5</li>
+                                                    <li>T6</li>
+                                                    <li>T7</li>
+                                                    <li>CN</li>
+                                                </ul>
+
+                                                <div class="weeks">
+                                                    <ul class="first__week">
+                                                        <span class="last-month">29</span>
+                                                        <span class="last-month">30</span>
+                                                        <span class="last-month">31</span>
+                                                        <span>01</span>
+                                                        <span>02</span>
+                                                        <span>03</span>
+                                                        <span>04</span>
+                                                    </ul>
+
+                                                    <ul class="second__week">
+                                                        <span>05</span>
+                                                        <span>06</span>
+                                                        <span>07</span>
+                                                        <span>08</span>
+                                                        <span>09</span>
+                                                        <span>10</span>
+                                                        <span>11</span>
+                                                    </ul>
+
+                                                    <ul class="third__week">
+                                                        <span>12</span>
+                                                        <span>13</span>
+                                                        <span>14</span>
+                                                        <span>15</span>
+                                                        <span>16</span>
+                                                        <span>17</span>
+                                                        <span>18</span>
+                                                    </ul>
+
+                                                    <ul class="four__week">
+                                                        <span>19</span>
+                                                        <span>20</span>
+                                                        <span>21</span>
+                                                        <span>22</span>
+                                                        <span>23</span>
+                                                        <span>24</span>
+                                                        <span>25</span>
+                                                    </ul>
+
+                                                    <ul class="fif__week">
+                                                        <span>26</span>
+                                                        <span>27</span>
+                                                        <span>28</span>
+                                                        <span>29</span>
+                                                        <span>30</span>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+                    <label class="search__room-replace header__with-search__item">
+                        <input hidden type="checkbox" id="checked__room" class="checked__room">
+                        <h5 class="search__located-heading">Trả phòng</h5>
+                        <p class="search__desc">Thêm ngày</p>
+                        <div class="room__calendar">
+                            <div class="calendar__heading">
+                                <div class="calendar__heading-btn">
+                                    <button class="heading__calendar calendar__heading-btn--active ">Lịch</button>
+                                    <button class="heading__visit-day">Ngày sinh hoạt</button>
+                                </div>
+                            </div>
+                            <div class="calendar__body">
+                                <div class="row calendar__container">
+                                    <div class="col l-6 calendar__col">
+                                        <div class="calendar__font">
+                                            <div class="current-day">
+                                                <h1>tháng 8, năm 2021</h1>
+                                            </div>
+
+                                            <div class="current-month">
+                                                <ul class="week-days">
+                                                    <li>T2</li>
+                                                    <li>T3</li>
+                                                    <li>T4</li>
+                                                    <li>T5</li>
+                                                    <li>T6</li>
+                                                    <li>T7</li>
+                                                    <li>CN</li>
+                                                </ul>
+
+                                                <div class="weeks">
+                                                    <ul class="first__week">
+                                                        <span class="last-month">26</span>
+                                                        <span class="last-month">27</span>
+                                                        <span class="last-month">28</span>
+                                                        <span class="last-month">29</span>
+                                                        <span class="last-month">30</span>
+                                                        <span class="last-month">31</span>
+                                                        <span class="before-days">01</span>
+                                                    </ul>
+
+                                                    <ul class="second__week">
+                                                        <span class="before-days">02</span>
+                                                        <span class="before-days">03</span>
+                                                        <span class="before-days">04</span>
+                                                        <span class="before-days">05</span>
+                                                        <span class="before-days">06</span>
+                                                        <span class="before-days">07</span>
+                                                        <span class="before-days">08</span>
+                                                    </ul>
+
+                                                    <ul class="third__week">
+                                                        <span class="before-days">09</span>
+                                                        <span class="before-days">10</span>
+                                                        <span class="before-days">11</span>
+                                                        <span class="before-days">12</span>
+                                                        <span class="before-days">13</span>
+                                                        <span class="before-days">14</span>
+                                                        <span class="before-days">15</span>
+                                                    </ul>
+
+                                                    <ul class="four__week">
+                                                        <span class="before-days">16</span>
+                                                        <span class="before-days">17</span>
+                                                        <span class="before-days">18</span>
+                                                        <span class="before-days">19</span>
+                                                        <span class="before-days">20</span>
+                                                        <span class="before-days">21</span>
+                                                        <span class="before-days">22</span>
+                                                    </ul>
+
+                                                    <ul class="fif__week">
+                                                        <span>23 <div class="today"></div></span>
+                                                        <span>24</span>
+                                                        <span>25</span>
+                                                        <span>26</span>
+                                                        <span>27</span>
+                                                        <span>28</span>
+                                                        <span>29</span>
+                                                    </ul>
+
+                                                    <ul class="six__week">
+                                                        <span>30</span>
+                                                        <span>31</span>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col l-6 calendar__col">
+                                        <div class="calendar__font">
+                                            <div class="current-day">
+                                                <h1>tháng 9, năm 2021</h1>
+                                            </div>
+
+                                            <div class="current-month">
+                                                <ul class="week-days">
+                                                    <li>T2</li>
+                                                    <li>T3</li>
+                                                    <li>T4</li>
+                                                    <li>T5</li>
+                                                    <li>T6</li>
+                                                    <li>T7</li>
+                                                    <li>CN</li>
+                                                </ul>
+
+                                                <div class="weeks">
+                                                    <ul class="first__week">
+                                                        <span class="last-month">29</span>
+                                                        <span class="last-month">30</span>
+                                                        <span class="last-month">31</span>
+                                                        <span>01</span>
+                                                        <span>02</span>
+                                                        <span>03</span>
+                                                        <span>04</span>
+                                                    </ul>
+
+                                                    <ul class="second__week">
+                                                        <span>05</span>
+                                                        <span>06</span>
+                                                        <span>07</span>
+                                                        <span>08</span>
+                                                        <span>09</span>
+                                                        <span>10</span>
+                                                        <span>11</span>
+                                                    </ul>
+
+                                                    <ul class="third__week">
+                                                        <span>12</span>
+                                                        <span>13</span>
+                                                        <span>14</span>
+                                                        <span>15</span>
+                                                        <span>16</span>
+                                                        <span>17</span>
+                                                        <span>18</span>
+                                                    </ul>
+
+                                                    <ul class="four__week">
+                                                        <span>19</span>
+                                                        <span>20</span>
+                                                        <span>21</span>
+                                                        <span>22</span>
+                                                        <span>23</span>
+                                                        <span>24</span>
+                                                        <span>25</span>
+                                                    </ul>
+
+                                                    <ul class="fif__week">
+                                                        <span>26</span>
+                                                        <span>27</span>
+                                                        <span>28</span>
+                                                        <span>29</span>
+                                                        <span>30</span>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="checkbox__guess" class="search__room-guess header__with-search__item">
+                        <input hidden type="checkbox" name="" id="checkbox__guess" class="checbox__guessing">
+                        <h5 class="search__located-heading">Khách</h5>
+                        <p class="search__desc">Thêm khách</p>
+                        <div class="guess__container">
+                            <div class="guess__container-item">
+                                <ul class="guess__list">
+                                    <li class="guess__item">
+                                        <div class="guess__item-infor">
+                                            <h1>Ngươi lớn</h1>
+                                            <p>Từ 12 tuổi trở lên</p>
+                                        </div>
+                                        <div class="guess__item-numorous">
+                                            <i class='bx bx-minus'></i>
+                                            <span>0</span>
+                                            <i class='guess__add-icon bx bx-plus-medical'></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="guess__list">
+                                    <li class="guess__item">
+                                        <div class="guess__item-infor">
+                                            <h1>Trẻ em</h1>
+                                            <p>Độ tuổi từ 2-11</p>
+                                        </div>
+                                        <div class="guess__item-numorous">
+                                            <i class='bx bx-minus'></i>
+                                            <span>0</span>
+                                            <i class='bx bx-plus-medical'></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="guess__list">
+                                    <li class="guess__item">
+                                        <div class="guess__item-infor">
+                                            <h1>Em bé</h1>
+                                            <p>Dưới 2</p>
+                                        </div>
+                                        <div class="guess__item-numorous">
+                                            <i class='bx bx-minus'></i>
+                                            <span>0</span>
+                                            <i class='bx bx-plus-medical'></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </label>
+                    <button class="search__icon header__with-search__item">
+                        <i class='bx bx-search'></i>
+                </div>
+                </button>
+            </div>
+        </div>
+        <label for="checked__room" class="overlay"></label>
+        <div class="slider">
+            <div class="slider__container">
+                <h1 class="slider__heading">Bạn chưa biết nên đi đâu? Tuyệt!</h1>
+                <a href="#" class="slider__link">
+                    <p class="slider__desc">Tìm kiếm linh hoạt</p>
+                </a>
+            </div>
+
+        </div>
+        <div class="main__container">
+            <div class="grid wide">
+                <div class="container__content">
+                    <span>
+                        <h5 class="content__heading">Khám phá những địa điểm gần đây</h5>
+                    </span>
+                    <div class="row">
+                        <div class="col l-3 m-4 c-6">
+                            <div class="content__body">
+                                <div class="content__body-item">
+                                    <div class="content__item-img">
+                                        <img class="content__body-item-img" src="./asstets/img/HaNoi.webp" alt="">
+                                    </div>
+                                    <div class="content__item-text">
+                                        <h1 class="content__text-heading">Hà Nội</h1>
+                                        <h1 class="content__text-desc">5,5 giờ lái xe</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
+                            <div class="content__body">
+                                <div class="content__body-item">
+                                    <div class="content__item-img">
+                                        <img class="content__body-item-img" src="./asstets/img/HoiAn.webp" alt="">
+                                    </div>
+                                    <div class="content__item-text">
+                                        <h1 class="content__text-heading">Thành phố Hội An</h1>
+                                        <h1 class="content__text-desc">5,5 giờ lái xe</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
+                            <div class="content__body">
+                                <div class="content__body-item">
+                                    <div class="content__item-img">
+                                        <img class="content__body-item-img" src="./asstets/img/HaiPhong.webp" alt="">
+                                    </div>
+                                    <div class="content__item-text">
+                                        <h1 class="content__text-heading">Hải Phòng</h1>
+                                        <h1 class="content__text-desc">5,5 giờ lái xe</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
+                            <div class="content__body">
+                                <div class="content__body-item">
+                                    <div class="content__item-img">
+                                        <img class="content__body-item-img" src="./asstets/img/DongHoi.webp" alt="">
+                                    </div>
+                                    <div class="content__item-text">
+                                        <h1 class="content__text-heading">Thành phố Đồng Hới</h1>
+                                        <h1 class="content__text-desc">1,5 giờ lái xe</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
+                            <div class="content__body">
+                                <div class="content__body-item">
+                                    <div class="content__item-img">
+                                        <img class="content__body-item-img" src="./asstets/img/SamSon.webp" alt="">
+                                    </div>
+                                    <div class="content__item-text">
+                                        <h1 class="content__text-heading">Sầm Sơn</h1>
+                                        <h1 class="content__text-desc">3,5 giờ lái xe</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
+                            <div class="content__body">
+                                <div class="content__body-item">
+                                    <div class="content__item-img">
+                                        <img class="content__body-item-img" src="./asstets/img/TpVinh.webp" alt="">
+                                    </div>
+                                    <div class="content__item-text">
+                                        <h1 class="content__text-heading">Thành Phố Vinh</h1>
+                                        <h1 class="content__text-desc">1,5 giờ lái xe</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
+                            <div class="content__body">
+                                <div class="content__body-item">
+                                    <div class="content__item-img">
+                                        <img class="content__body-item-img" src="./asstets/img/NinhBinh.webp" alt="">
+                                    </div>
+                                    <div class="content__item-text">
+                                        <h1 class="content__text-heading">Thành phố Ninh Bình</h1>
+                                        <h1 class="content__text-desc">4 giờ lái xe</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
+                            <div class="content__body">
+                                <div class="content__body-item">
+                                    <div class="content__item-img">
+                                        <img class="content__body-item-img" src="./asstets/img/SonTay.webp" alt="">
+                                    </div>
+                                    <div class="content__item-text">
+                                        <h1 class="content__text-heading">Thị xãSơn Tây</h1>
+                                        <h1 class="content__text-desc">6 giờ lái xe</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span>
+                        <h5 class="content__heading content__heading-where">Ở bất cứ đâu</h5>
+                    </span>
+                    <div class="row">
+                        <div class="col l-3 m-4 c-12">
+                            <div class="content__everywhere">
+                                <span>
+                                    <img class="content__everywhere" src="./asstets/img/NoiNghiDUong.webp" alt="">
+                                </span>
+                                <h2>Nơi nghỉ dưỡng ngoài trời</h2>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-12">
+                            <div class="content__everywhere">
+                                <span>
+                                    <img class="content__everywhere" src="./asstets/img/ChoODocDao.webp" alt="">
+                                </span>
+                                <h2>Chỗ ở độc đáo</h2>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-12">
+                            <div class="content__everywhere">
+                                <span>
+                                    <img class="content__everywhere" src="./asstets/img/ToanBoNha.webp" alt="">
+                                </span>
+                                <h2>Toàn bộ nhà</h2>
+                            </div>
+                        </div>
+                        <div class="col l-3 displaynone">
+                            <div class="content__everywhere">
+                                <span>
+                                    <img class="content__everywhere" src="./asstets/img/CunCung.webp" alt="">
+                                </span>
+                                <h2>Cho phép mang theo cún cưng</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-12 container__banner">
+                            <div class="container__content-banner">
+                                <span>
+                                    <img class="content-banner-img" src="./asstets/img/Slider.webp" alt="">
+                                </span>
+                            </div>
+                            <div class="container__banner-desc">
+                                <h5>Thử đón tiếp khách</h5>
+                                <p>Kiếm thêm thu nhập và khám phá các cơ hội mới băng cách chia sẻ nơi ở của bạn.</p>
+                                <button>Tìm hiểu thêm</button>
+                            </div>
+                        </div>
+                    </div>
+                    <span>
+                        <h5 class="content__heading content__heading-experience">Khám phá những điều nên trải nghiệm
+                        </h5>
+                    </span>
+                    <div class="row">
+                        <div class="col l-4 m-4 c-6">
+                            <a href="located.html" class="content__experience-link">
+                                <div class="content__experience">
+                                    <span>
+                                        <img src="./asstets/img/TraiNghiem.webp" alt="" class="experience__img">
+                                    </span>
+                                    <div class="experience__desc">
+                                        <h2>Trải nghiệm</h2>
+                                        <p>Tìm các hoạt động khó quên gần bạn.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-4 m-4 c-6">
+                            <a href="located.html" class="content__experience-link">
+                                <div class="content__experience">
+                                    <span>
+                                        <img src="./asstets/img/TraiNghiemTrucTuyen.webp" alt=""
+                                            class="experience__img">
+                                    </span>
+                                    <div class="experience__desc">
+                                        <h2>Trải nghiệm trực tuyến</h2>
+                                        <p>Các hoạt động tương tác, truyền trực tiếp dưới sự dẫn dắt của Người tổ chức.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-4 m-4 c-6">
+                            <a href="located.html" class="content__experience-link">
+                                <div href="located.html" class="content__experience">
+                                    <span>
+                                        <img src="./asstets/img/VanDongVienOlympic.webp" alt="" class="experience__img">
+                                    </span>
+                                    <div class="experience__desc">
+                                        <h2>Vận động viên Olympic và vận động viên Paralympic</h2>
+                                        <p>Các hoạt động trực tuyến do vận động viên tổ chức.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3 m-4">
+                        <div class="footer__content">
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <h2>GIỚI THIỆU</h2>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">
+                                        Phương thức hoạt động của Airbnb
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Trang tin tức</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Airbnb 2021</a>
+                                </li>
+                                <li class="footer__item">v
+                                    <a href="#" class="footer__item-link">Nhà đầu tư</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Airbnb Luxe</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Nhờ có Host, mọi điều đều có thể</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Cơ hội nghề nghiệp</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Thư của nhà sáng lập</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4">
+                        <div class="footer__content">
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <h2>Cộng đồng</h2>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">
+                                        Sự đa dạng và Cảm giác thân thuộc
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Tiện nghi phù hợp cho người khuyết tật</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Đối tác liên kết Airbnb</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Chỗ ở cho tuyến đầu</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Lượt giới thiệu của khách</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Airbnb.org</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4">
+                        <div class="footer__content">
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <h2>Đón tiếp khách</h2>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">
+                                        Cho thuê nhà
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Tổ chức Trải nghiệm trực tuyến</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Tổ chức trải nghiệm</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Đón tiếp khách có trách nhiệm</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Trung tâm tài nguyên</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Trung tâm cộng đồng</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-4">
+                        <div class="footer__content">
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <h2>Hỗ trợ</h2>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">
+                                        Biện pháp ứng phó với đại dịch COVID-19 của chúng tôi
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Trung tâm trợ giúp</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Các tùy chọn hủy</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Hỗ trợ khu dân cư</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Tin cậy và an toàn</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l-12 m-12 m-4">
+                        <div class="footer__address">
+                            <ul class="footer__address-list">
+                                <li class="footer__address-item">
+                                    <p>© 2021 Airbnb, Inc.</p>
+                                </li>
+                                <li class="footer__address-item footer__space-separate">
+                                    <span>.</span>
+                                </li>
+                                <li class="footer__address-item">
+                                    <a href="" class="footer__address-link">Quyền riêng tư</a>
+                                </li>
+                                <li class="footer__address-item footer__space-separate">
+                                    <span>.</span>
+                                </li>
+                                <li class="footer__address-item">
+                                    <a href="" class="footer__address-link">Điều khoản</a>
+                                </li>
+                                <li class="footer__address-item footer__space-separate">
+                                    <span>.</span>
+                                </li>
+                                <li class="footer__address-item">
+                                    <a href="" class="footer__address-link">Sơ đồ trang web</a>
+                                </li>
+                            </ul>
+
+                            <ul class="footer__address-list">
+                                <li class="footer__address-item footer__language-monery-item">
+                                    <i class='language-monery__icon bx bx-globe'></i>
+                                    <a href="" class="footer__address-link footer__address-language">Tiếng Việt(VN)</a>
+                                </li>
+                                <li class="footer__address-item footer__language-monery-item">
+                                    <i class='language-moner__dollar-icon bx bx-dollar'></i>
+                                    <a href="" class="footer__address-link footer__address-monery">USD</a>
+                                </li>
+                                <li
+                                    class="footer__address-item footer__language-monery-item footer__language-monery-item-social">
+                                    <i class='address-item__social-icon bx bxl-facebook'></i>
+                                    <i class='address-item__social-icon bx bxl-twitter'></i>
+                                    <i class='address-item__social-icon bx bxl-instagram'></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+              <div class="modal__form">
+                <div class="modal__closer"><i class='bx bx-x'></i></div>
+                <div class="modal__form-container">
+                    <h1 class="modal__heading">Ngôn ngữ và khu vực được đề xuất</h1>
+                    <ul class="modal__list">
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Français</div>
+                                <div class="modal__link-desc">France</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">English</div>
+                                <div class="modal__link-desc">United Kingdom</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">English</div>
+                                <div class="modal__link-desc">United States</div>
+                            </a>
+                        </li>
+                    </ul>
+                    <h1 class="modal__heading">Chọn ngôn ngữ và khu vực</h1>
+                    <ul class="modal__list">
+                        <li class="modal__item">
+                            <a href="" class="modal__link modal__link--active">
+                                <div class="modal__link-heading">Tiếng Việt</div>
+                                <div class="modal__link-desc">Việt Nam</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Azərbaycan dili</div>
+                                <div class="modal__link-desc">Azərbaycan</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Bahasa Indonesia</div>
+                                <div class="modal__link-desc">Indonesia</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Bosanski</div>
+                                <div class="modal__link-desc">Bosna i Hercegovina</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Català</div>
+                                <div class="modal__link-desc">Espanya</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Čeština</div>
+                                <div class="modal__link-desc">Česká republika</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Crnogorski</div>
+                                <div class="modal__link-desc">Crna Gora</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Dansk</div>
+                                <div class="modal__link-desc">Danmark</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Deutsch</div>
+                                <div class="modal__link-desc">Deutschland</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Deutsch</div>
+                                <div class="modal__link-desc">Österreich</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Deutsch</div>
+                                <div class="modal__link-desc">Schweiz</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">English</div>
+                                <div class="modal__link-desc">Australia</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">English</div>
+                                <div class="modal__link-desc">Canada</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">English</div>
+                                <div class="modal__link-desc">Ireland</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">English</div>
+                                <div class="modal__link-desc">New Zealand</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">English</div>
+                                <div class="modal__link-desc">India</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">English</div>
+                                <div class="modal__link-desc">Singapore</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">English</div>
+                                <div class="modal__link-desc">United Arab Emirates</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Ελληνικά</div>
+                                <div class="modal__link-desc">Ελλάδα</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Български</div>
+                                <div class="modal__link-desc">България</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Македонски</div>
+                                <div class="modal__link-desc">Северна Македонија</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Русский</div>
+                                <div class="modal__link-desc">Россия</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Українська</div>
+                                <div class="modal__link-desc">Україна</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Հայերեն</div>
+                                <div class="modal__link-desc">Հայերեն</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">עברית</div>
+                                <div class="modal__link-desc">ישראל</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">ไทย</div>
+                                <div class="modal__link-desc">ประเทศไทย</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">한국어</div>
+                                <div class="modal__link-desc">대한민국</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">日本語</div>
+                                <div class="modal__link-desc">日本</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">简体中文</div>
+                                <div class="modal__link-desc">美国</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">繁體中文</div>
+                                <div class="modal__link-desc">美國</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">简体中文</div>
+                                <div class="modal__link-desc">中国</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">繁體中文</div>
+                                <div class="modal__link-desc">香港</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">繁體中文</div>
+                                <div class="modal__link-desc">台灣</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Français</div>
+                                <div class="modal__link-desc">France</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Français</div>
+                                <div class="modal__link-desc">France</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Français</div>
+                                <div class="modal__link-desc">France</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Français</div>
+                                <div class="modal__link-desc">France</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Français</div>
+                                <div class="modal__link-desc">France</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Français</div>
+                                <div class="modal__link-desc">France</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Français</div>
+                                <div class="modal__link-desc">France</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Français</div>
+                                <div class="modal__link-desc">France</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Français</div>
+                                <div class="modal__link-desc">France</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Français</div>
+                                <div class="modal__link-desc">France</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Français</div>
+                                <div class="modal__link-desc">France</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Français</div>
+                                <div class="modal__link-desc">France</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="modal__form">
+                <div class="modal__closer"><i class='bx bx-x'></i></div>
+                <div class="modal__form-container">
+                    <h1 class="modal__heading">Chọn loại tiền tệ</h1>
+                    <ul class="modal__list">
+                        <li class="modal__item">
+                            <a href="" class="modal__link modal__link--active">
+                                <div class="modal__link-heading">Đô la Mỹ</div>
+                                <div class="modal__link-desc">USD - $</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Baht Thái Lan</div>
+                                <div class="modal__link-desc">THB - ฿</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Bảng Anh</div>
+                                <div class="modal__link-desc">GBP - £</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Colon Costa Rica</div>
+                                <div class="modal__link-desc">CRC - ₡</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Dirham Ma-rốc</div>
+                                <div class="modal__link-desc">MAD</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Dirham các tiểu vương quốc Ả Rập thống nhất</div>
+                                <div class="modal__link-desc">AED - ﺩ.ﺇ</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Euro</div>
+                                <div class="modal__link-desc">EUR - €</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Forint Hungary</div>
+                                <div class="modal__link-desc">HUF - Ft</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Franc Thụy Sĩ</div>
+                                <div class="modal__link-desc">CHF</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Koruna Séc</div>
+                                <div class="modal__link-desc">CZK - Kč</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Krona Thụy Điển</div>
+                                <div class="modal__link-desc">SEK - kr</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Krone Đan Mạch</div>
+                                <div class="modal__link-desc">DKK - kr</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Kuna Croatia</div>
+                                <div class="modal__link-desc">HRK - kn</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Leu Rumani</div>
+                                <div class="modal__link-desc">RON - lei</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Lev Bulgaria</div>
+                                <div class="modal__link-desc">BGN - лв.</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Lira Thổ Nhĩ Kỳ</div>
+                                <div class="modal__link-desc">TRY - ₺</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Nhân dân tệ Trung Quốc</div>
+                                <div class="modal__link-desc">CNY - ￥</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Peso Chile</div>
+                                <div class="modal__link-desc">CLP - $</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Peso Colombia</div>
+                                <div class="modal__link-desc">COP - $</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Peso Mexico</div>
+                                <div class="modal__link-desc">MXN - $</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Peso Philippines</div>
+                                <div class="modal__link-desc">PHP - ₱</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Peso Uruguay</div>
+                                <div class="modal__link-desc">UYU - $U</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Rand Nam Phi</div>
+                                <div class="modal__link-desc">Україна</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Հայերեն</div>
+                                <div class="modal__link-desc">Հայերեն</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">עברית</div>
+                                <div class="modal__link-desc">ישראל</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">ไทย</div>
+                                <div class="modal__link-desc">ประเทศไทย</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">한국어</div>
+                                <div class="modal__link-desc">대한민국</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">日本語</div>
+                                <div class="modal__link-desc">日本</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">简体中文</div>
+                                <div class="modal__link-desc">美国</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">繁體中文</div>
+                                <div class="modal__link-desc">美國</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">简体中文</div>
+                                <div class="modal__link-desc">中国</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">繁體中文</div>
+                                <div class="modal__link-desc">香港</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">繁體中文</div>
+                                <div class="modal__link-desc">台灣</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Français</div>
+                                <div class="modal__link-desc">France</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Français</div>
+                                <div class="modal__link-desc">France</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Français</div>
+                                <div class="modal__link-desc">France</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Français</div>
+                                <div class="modal__link-desc">France</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Français</div>
+                                <div class="modal__link-desc">France</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Français</div>
+                                <div class="modal__link-desc">France</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Français</div>
+                                <div class="modal__link-desc">France</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Français</div>
+                                <div class="modal__link-desc">France</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Français</div>
+                                <div class="modal__link-desc">France</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Français</div>
+                                <div class="modal__link-desc">France</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Français</div>
+                                <div class="modal__link-desc">France</div>
+                            </a>
+                        </li>
+                        <li class="modal__item">
+                            <a href="" class="modal__link">
+                                <div class="modal__link-heading">Français</div>
+                                <div class="modal__link-desc">France</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</body>
+
+
+
+<script>
+    var header = document.getElementById('header');
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 190) {
+            header.classList.add('active');
+        }
+        else {
+            header.classList.remove('active');
+        }
+    })
+
+</script>

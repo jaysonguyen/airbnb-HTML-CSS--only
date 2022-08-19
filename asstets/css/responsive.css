@@ -1,0 +1,230 @@
+/* mobile */
+
+@media (max-width: 739px) {
+    .mobilenone {
+        display: none;
+    }
+
+    .navbar {
+        margin-top: 14px;
+        margin-bottom: 0;
+    }
+
+    .scrooling-search {
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    .scrooling__container {
+        padding: 4px 5px;
+        background: var(--back-color);
+        color: #fff;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    .scrooling__container div {
+        background-color: transparent;
+        padding: 8px 2px 8px 8px;
+        transform: translateX(22px);
+    }
+
+    .scrooling__container-search-icon i{
+        font-size: 1.8rem;
+        color: #aa001f;
+    }
+
+    .scrooling__container input {
+        flex: 0;
+        color: #fff;
+        font-size: 1.4rem;
+        transform: translateX(23px);
+    }
+
+    .slider {
+        background-size: cover;
+        height: 514px;
+        width: 378px;
+        position: relative;
+    }
+
+    .slider__container {
+        max-width: 200px;
+        max-height: 66px;
+        position: absolute;
+        top: 50%;
+    }
+
+    .slider__heading {
+        text-shadow: 0 0 2px #ccc;
+    }
+
+    .slider__link {
+        padding: 1px 25px;
+    }
+
+    .content__heading {
+        font-size: 2.2rem;
+    }
+
+    .container__content {
+        margin: 0 10px;
+    }
+    .content__everywhere {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%vv;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 740px) and (max-width: 1024px) {
+
+    .displaynone {
+        display: none;
+    }
+
+    .navbar {
+        margin-top: 30px;
+        height: 80px;
+    }
+
+    .navbar__list {
+        font-size: 1.2rem;
+    }
+
+    .navbar__img-link {
+        font-size: 3.5rem;
+    }
+
+    .navbar__img {
+        flex: 0;
+    }
+
+    .navbar__item-link {
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin: 0 8px;
+    }
+
+    .navbar__list.scrolling-hidden {
+        flex: 1.5;
+        transform: translateX(45px);
+    }
+
+    .navbar__item-user-infor {
+        width: 52px;
+        top: -1px
+    }
+    .navbar__item-user-infor i {
+        font-size: 1.8rem;
+    }
+
+    .navbar__item-link-icon {
+        top: -1px;
+        margin: 0 4px 0 -4px;
+    }
+
+    .navbar__list-user {
+        align-items: center;
+    }
+
+    .header__with-search {
+        width: 646px;
+        height: 64px;
+    }
+
+    .slider__heading {
+        font-size: 1.4rem;
+    }
+
+    .slider__desc {
+        font-size: 1.8rem;
+    }
+
+    .slider__link {
+        padding: 3px 14px;
+    }
+
+    .search__located-heading,
+    .search__desc {
+        font-size: 1.2rem;
+    }
+
+    .search__icon {
+        width: 43px;
+        height: 42px;
+    }
+
+    .search__room-receive, .search__room-replace, .search__room-guess {
+        padding: 0px 10px 0 24px;
+    }
+
+    .scrooling__container {
+        margin: auto 20px;
+        transform: translateY(-10px);
+    }
+
+    .content__everywhere {
+        width: 230px;
+        height: 230px;
+        border-radius: 8px;
+    }
+
+    .content__everywhere h2 {
+        font-size: 1.4rem;
+        margin: 4px 0 30px ;
+    }
+
+    .content-banner-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+    }
+
+    .container__banner-desc {
+        width: 60%;
+        left: 42px;
+        color: #fff;
+    }
+
+    .container__banner-desc h5 {
+        width: 80%;
+        line-height: 3.2rem;
+        font-size: 3.2rem;
+    }
+
+    .container__banner-desc p {
+        width: 60%;
+        font-size: 1.5rem;
+        color: #fff;
+        font-weight: 400;
+    }
+
+    .container__banner-desc button {
+        width: 132px;
+        padding: 12.5px 0;
+    }
+
+    .experience__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .footer__address {
+        display: inline-flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .footer__language-monery-item-social {
+        margin-left: 10px;
+    }
+}    
+
+
+@media  (max-width: 1023px) {
+    
+}
